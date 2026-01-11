@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatay Kahvaltısı | Gurme Rehber</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --hatay-red: #8e1b1b;
+            --hatay-gold: #e67e22;
+            --bg-cream: #fdfaf7;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-cream); 
+            color: #2c3e50;
+        }
+
+        /* Başlık Güzelleştirme */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--hatay-red);
+            font-weight: 700;
+        }
+
+        /* Görsel Alanı: Profesyonel Çerçeve ve Hover */
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 10px solid white;
+            transition: transform 0.4s ease;
+        }
+
+        .img-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .img-container img {
+            transition: transform 0.6s ease;
+        }
+
+        .img-container:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Liste Güzelleştirme */
+        .custom-list .list-group-item {
+            background-color: white;
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 15px !important;
+            padding: 15px 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .custom-list .list-group-item:hover {
+            background-color: var(--hatay-red);
+            color: white;
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(142, 27, 27, 0.2);
+        }
+
+        .check-mark {
+            color: var(--hatay-gold);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .custom-list .list-group-item:hover .check-mark {
+            color: white;
+        }
+
+        .lead-p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="container my-5 py-5">
+    <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6">
+            <div class="img-container">
+                <img src="kahvalti.img.png" 
+                     class="img-fluid" 
+                     alt="Geleneksel Hatay Kahvaltısı">
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ps-lg-4">
+                <h2 class="section-title border-start border-5 border-warning ps-4 mb-4">
+                    Geleneksel Hatay Kahvaltısı
+                </h2>
+                
+                <p class="lead-p">
+                    Hatay kahvaltısı, taze <strong>zahter</strong>, baharatlı <strong>sürk peyniri</strong> ve 
+                    altın sarısı <strong>zeytinyağının</strong> başrolde olduğu, her lokmasında binlerce yıllık 
+                    kültürü barındıran bir şölendir.
+                </p>
+
+                <div class="list-group custom-list">
+                    <div class="list-group-item">
+                        <span class="check-mark">✔</span> Kırma Halhalı Zeytini
+                    </div>
+                    <div class="list-group-item">
+                        <span class="check-mark">✔</span> Sürk Peyniri (Acılı Çökelek)
+                    </div>
+                    <div class="list-group-item">
+                        <span class="check-mark">✔</span> Geleneksel Tuzlu Yoğurt
+                    </div>
+                    <div class="list-group-item">
+                        <span class="check-mark">✔</span> Taze Kekikli Zeytinyağı
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <button class="btn btn-dark rounded-pill px-4 py-2 mt-2">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
